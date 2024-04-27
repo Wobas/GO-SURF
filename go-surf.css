@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Fira Sans Black";
+    src: url(/Fonts/FiraSans/FiraSans-Black.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans BlackItalic";
+    src: url(/Fonts/FiraSans/FiraSans-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Bold";
+    src: url(/Fonts/FiraSans/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans BoldItalic";
+    src: url(/Fonts/FiraSans/FiraSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans ExtraBold";
+    src: url(/Fonts/FiraSans/FiraSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans ExtraBoldItalic";
+    src: url(/Fonts/FiraSans/FiraSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans ExtraLight";
+    src: url(/Fonts/FiraSans/FiraSans-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans ExtraLightItalic";
+    src: url(/Fonts/FiraSans/FiraSans-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Italic";
+    src: url(/Fonts/FiraSans/FiraSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Light";
+    src: url(/Fonts/FiraSans/FiraSans-Light.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans LightItalic";
+    src: url(/Fonts/FiraSans/FiraSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Medium";
+    src: url(/Fonts/FiraSans/FiraSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans MediumItalic";
+    src: url(/Fonts/FiraSans/FiraSans-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Regular";
+    src: url(/Fonts/FiraSans/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans SemiBold";
+    src: url(/Fonts/FiraSans/FiraSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans SemiBoldItalic";
+    src: url(/Fonts/FiraSans/FiraSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans Thin";
+    src: url(/Fonts/FiraSans/FiraSans-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Fira Sans ThinItalic";
+    src: url(/Fonts/FiraSans/FiraSans-ThinItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* --font-family: "Fira Sans", sans-serif; */
+    --content-width: 116.5rem;
+    --container-offset: 0rem;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    --light-color: #fff;
+    --main: #4AF6CD;
+    /* font: 400 1rem "Fira Sans", sans-serif; */
+}
+
+.hero {
+    /* position: relative; */
+}
+
+.bg_img {
+    position: absolute;
+    width: var(--content-width);
+}
+
+.logo {
+    position: absolute;
+    left: -0.875rem;
+
+    font-family: Fira Sans Extrabold;
+    font-size: 12.5rem;
+    line-height: 9.75rem;
+    text-align: left;
+    user-select: none;    /* делает текст невыделяемым */
+
+    color: var(--light-color);
+    opacity: .056;    /* прозрачность */
+}
+
+.header {
+    border: solid 1px red;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 10.5rem;
+}
+
+.rectangle {
+    position: absolute;
+    background-color: var(--main);
+    width: 10.5rem;
+    height: 11.313rem;
+}
+
+.header_logo {
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+
+    margin-top: 1.563rem;
+    margin-bottom: 2.5rem;
+    transform: rotate(-180deg);
+
+    font-family: Fira Sans ExtraBold;
+    font-size: 3.75rem;
+    line-height: 5.375rem;
+
+    color: var(--light-color);
+
+    border: solid 1px red;
+}
+
+.nav {
+    /* align-self:center; */
+    /* position: absolute; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.nav_list {
+    /* display: flex;
+    justify-content: flex-start;
+    flex-direction: column; */
+    /* vertical-align: middle; */
+}
+
+.nav_item {
+    font-family: Fira Sans Medium;
+    letter-spacing: 3px;
+    margin: 2rem;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    text-decoration: none;
+    color: var(--light-color);
+
+    height: 60px;
+    width: 60px;
+}
+
+.nav_svg {
+    margin-bottom: 0.438rem;
+    vertical-align: middle;
+}
+
+.nav_descr {
+    font-family: Fira Sans Medium;
+    line-height: 0.875rem;
+    font-size: 0.75rem;
+}
+
+
+.btn_search {
+    display: block;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+    width: 24px;
+    height: 24px;
+    background-image: url(/pictures/search.svg);
+}
+
+
+
+.surf {
+    width: 1634.3px;
+    height: 1951px;
+    top: 1024px;
+    left: -49px;
+    gap: 0px;
+    opacity: 0px;
+
+    background-color: aqua;
+}
+
+.travel {
+    width: 1733px;
+    height: 1658px;
+    top: 3252px;
+    left: -50px;
+    gap: 0px;
+    opacity: 0px;
+
+    background-color: violet;
+}
+
+.sleep {
+    width: 1647.22px;
+    height: 1449.58px;
+    top: 4970px;
+    left: -49px;
+    gap: 0px;
+    opacity: 0px;
+
+    background-color: aqua;
+}
+
+.shop {
+    width: 1491.72px;
+    height: 896px;
+    top: 6680px;
+    left: -49px;
+    gap: 0px;
+    opacity: 0px;
+
+    background-color: violet;
+}
