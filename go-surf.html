@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/go-surf.css">
     <title>Document</title>
+    <script src="go-surf.js" defer></script>
 </head>
 <body class="page_body">
   <div class="site_container">
@@ -65,12 +66,17 @@
           <button class="btn_search"></button>
 
           <div class="date_show">
-            <span class="day">21</span>
+            <span class="day date" id="day"></span>
             <div class="month_year">
-              <span class="month">04</span>
-              |  
-              <span class="year">2024</span>
+              <span class="month date" id="month"></span>
+              <span class="date vertical">|</span>  
+              <span class="year date" id="year"></span>
             </div>
+          </div>
+
+          <div class="location">
+            <img class="point_svg" src="/pictures/point.svg">
+            <span class="location_text">California</span>
           </div>
 
         </header>
@@ -95,7 +101,17 @@
     </main>
 
     <footer class="footer">    <!-- Нижняя часть страницы --> 
-
+      <div class="footer_big">
+        <span class="footer_go">
+          GO
+        </span>
+        <span class="footer_surf">
+          SURF
+        </span>
+      </div>
+      <div class="footer_copyright">
+        © GO-SURF 2018. ALL RIGHTS RESERVED.
+      </div>
     </footer>
   </div>
 </body>

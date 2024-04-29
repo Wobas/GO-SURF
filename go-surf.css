@@ -103,6 +103,10 @@
     /* font: 400 1rem "Fira Sans", sans-serif; */
 }
 
+.page_body {
+    background-color: #171919
+}
+
 .hero {
     /* position: relative; */
 }
@@ -127,7 +131,6 @@
 }
 
 .header {
-    border: solid 1px red;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -156,8 +159,6 @@
     line-height: 5.375rem;
 
     color: var(--light-color);
-
-    border: solid 1px red;
 }
 
 .nav {
@@ -215,7 +216,44 @@
     background-image: url(/pictures/search.svg);
 }
 
+.date_show {
+    margin-top: 17px;
+}
 
+.date {
+    color: white;
+}
+
+.day {
+    font-family: Fira Sans ExtraBold;
+    line-height: 64px;
+    font-size: 72px;
+}
+
+.month {
+    font-family: Fira Sans Light;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+}
+
+.year {
+    font-family: Fira Sans Light;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+}
+
+.vertical {
+    font-family: Fira Sans Medium;
+    margin: 4.2px;
+}
+
+.location_text {
+    color: white;
+    font-family: Fira Sans Light;
+    letter-spacing: 1.05px;
+    line-height: 14px;
+    font-size: 12px;
+}
 
 .surf {
     width: 1634.3px;
@@ -259,4 +297,75 @@
     opacity: 0px;
 
     background-color: violet;
+}
+
+
+.footer {
+    padding-top: 6.25rem;
+    color: white;
+}
+
+
+.footer_big {
+    padding-top: 1.0625rem;
+    padding-bottom: 1.375rem;
+
+    text-align: center;
+    font: 800 40px "Fira Sans ExtraBold", sans-serif; /* 2.5rem */
+    
+    line-height: 36px;
+    text-transform: uppercase;
+    
+    box-sizing: inherit;
+}
+
+
+.footer_go {
+    padding-right: 18px;
+    position: relative;
+
+    
+    /*line-height: 36px;*/
+}
+
+
+.footer_go::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+}
+
+
+.footer_surf {
+    position: relative;
+    padding: 14px 57px 16px 14px;
+    background-color: var(--main);
+}
+
+
+.footer_surf::after {
+    content: "";
+    position: absolute;
+    width: 24.147px;
+    height: 20.15px;
+    flex-shrink: 0;
+    background-image: url(../pictures/arrow-next.svg);
+    top: 35%;
+    right: 1rem;
+}
+
+
+.footer_copyright {
+    padding-top: 1.8125rem;
+    padding-bottom: 2.125rem;
+
+    text-align: center;
+    font: 400 0.75rem "Fira Sans Light", sans-serif;
+    line-height: 14px;
+    letter-spacing: 1.05px;
 }
